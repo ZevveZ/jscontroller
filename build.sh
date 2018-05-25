@@ -7,7 +7,7 @@ sudo apt-get update && sudo apt-get install cmake libudev-dev libevdev-dev -y
 git clone https://github.com/WisconsinRobotics/JoystickLibrary.git
 cd JoystickLibrary/cpp
 mkdir build && cd build
-cmake .. && make
+cmake -std=c++11 .. && make
 
 # build jscontroller
 cd $EXECPATH
